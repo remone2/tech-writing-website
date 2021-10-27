@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* home page */
+
+.top-half {
+  /* header */
+  background-color: rgb(55, 8, 99);
+  color: rgba(255, 255, 255, 0.877);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: baseline;
+}
+
+.logo {
+  /* logo */
+  transform: translate(0px, -14px);
+  font-size: 40px;
+}
+
+.material-icons {
+  font-size: 60px;
+}
+
+.top-left {
+  /* logo and text */
+  display: flex;
+  align-items: baseline;
+}
+
+.top-half a {
+  /* links */
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.877);
+  font-size: 20px;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.479);
+}
+
+.top-half li {
+  display: inline;
+}
+
+.top-half ul {
+  transform: translate(-10px, -16px);
+}
+
+.lower-header {
+  /* below the header, welcome + blog */
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+.intro-card {
+  /* left welcome */
+  width: fit-content;
+  text-align: center;
+  background-color: rgb(107, 0, 41);
+  border: 1px solid white;
+  height: fit-content;
+  margin-top: 5rem;
+}
+
+.intro-card img {
+  width: 50%;
+}
+
+.intro-card h1,
+.intro-card h2,
+.intro-card p {
+  padding: 0.5rem;
+}
+
+.intro-card h1 {
+  background-color: rgb(31, 31, 31);
+}
+
+.short-summary {
+  /* right blog posts */
+  border: 1px solid white;
+  height: fit-content;
+  margin-top: 5rem;
+}
+
+.container-posts {
+  /* contains left and right within blog posts */
+  display: flex;
+}
+
+.blog-title {
+  /* top of blog posts */
+  background-color: rgb(31, 31, 31);
+  text-align: center;
+  padding: 1rem;
+}
+
+.blog-1,
+.blog-2 {
+  background-color: rgb(107, 0, 41);
+  text-align: center;
+  padding: 1rem;
+}
+
+.blog-1 {
+  border-right: 2px solid black;
+}
+
+.blog-2 img {
+  width: 75%;
+}
+
+.blog-1 img {
+  width: 50%;
+}
+
+.blog-link {
+  height: fit-content;
+  background-color: rgb(55, 8, 99);
+  border-top: 2px solid black;
+  padding: 1rem;
+}
+
+.blog-link a:hover {
+  color: rgba(255, 255, 255, 0.479);
+}
+
+.blog-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-left: 2rem;
+}
+
+.about-section {
+  /* about me card */
+  width: 700px;
+  border: 2px solid white;
+  margin-bottom: 10rem;
+  color: white;
+  margin-left: 5rem;
+  margin-top: 5rem;
+}
+
+.about-section h1 {
+  background-color: rgb(31, 31, 31);
+  padding: 1rem;
+}
+
+.about-section p {
+  padding: 1rem;
+  background-color: rgb(107, 0, 41);
+}
+
+.about-section div {
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  background-color: rgb(55, 8, 99);
+}
+
+.about-section a {
+  text-decoration: none;
+  color: white;
+  font-size: bold;
+}
+
+.about-section a:hover {
+  color: rgba(255, 255, 255, 0.479);
+}
+
+.contact-container {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.contact-button {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  background-color: rgb(31, 31, 31);
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+.credit {
+  width: fit-content;
+  display: flex;
+  color: white;
+}
+
+.credit a {
+  color: rgb(197, 13, 13);
+  text-decoration: none;
+}
+
+.credit a:hover {
+  color: rgba(255, 255, 255, 0.479);
+}
+
+footer {
+  background-color: rgb(55, 8, 99);
+  padding: 2rem;
+}
+
+footer ul {
+  padding-left: 5rem;
+}
+
+footer li {
+  display: inline;
+  padding-left: 5rem;
+}
+
+footer a {
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+.whole {
+  background-image: url(./images/bg-pic.png);
+  background-size: contain;
+}
+
+/* about me page */
+
+.about-me-title {
+  color: white;
+  font-size: 50px;
+  padding: 2rem 1rem 2rem 4rem;
+}
+
+.about-me-main {
+  color: white;
+  font-size: 30px;
+}
+
+.about-1,
+.about-2,
+.about-3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.about-1 div:nth-child(1),
+.about-2 div:nth-child(1),
+.about-3 div:nth-child(1) {
+  width: 800px;
+}
+
+.about-1 div:nth-child(2),
+.about-3 div:nth-child(2) {
+  padding-right: 10rem;
+  text-align: center;
+}
+
+.about-2 {
+  flex-direction: row-reverse;
+}
+
+.about-2 div:nth-child(2) {
+  padding-left: 10rem;
+  text-align: center;
+}
+
+.about-1 p:nth-child(1),
+.about-2 p:nth-child(1),
+.about-3 p:nth-child(1) {
+  background-color: rgb(107, 0, 41);
+  height: 100%;
+  padding: 2rem;
+  border: 2px solid white;
+}
+
+.about-1 img,
+.about-2 img,
+.about-3 img {
+  border: 2px solid white;
+}
+
+/* blog page */
+
+.blog-post-title {
+  margin: 2rem;
+  color: white;
+}
+
+.blog-post-1,
+.blog-post-2,
+.blog-post-3,
+.blog-post-4,
+.blog-post-5 {
+  background-color: rgb(107, 0, 41);
+  color: white;
+  margin: 2rem;
+  width: 800px;
+  border: 1px solid white;
+}
+
+.all-posts a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 2rem;
+  font-size: 25px;
+}
+
+hr {
+  margin: auto;
+  width: 95%;
+}
+
+.all-posts a:hover {
+  color: rgba(255, 255, 255, 0.479);
+}
+
+.all-posts p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.all-posts img {
+  padding: 2rem;
+}
+
+.blog-post-1 p:nth-child(3),
+.blog-post-2 p:nth-child(3),
+.blog-post-3 p:nth-child(3),
+.blog-post-4 p:nth-child(3),
+.blog-post-5 p:nth-child(3) {
+  padding-top: 1rem;
+}
+
+.blog-post-1 p:nth-child(4),
+.blog-post-2 p:nth-child(4),
+.blog-post-3 p:nth-child(4),
+.blog-post-4 p:nth-child(4),
+.blog-post-5 p:nth-child(4) {
+  padding-top: 1rem;
+}
+
+/* all blog pages */
+
+.blog-main {
+  background-color: rgb(107, 0, 41);
+  width: 95%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  padding: 2rem;
+  border: 1px solid white;
+}
+
+.blog-main div:nth-child(1) {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.blog-main img {
+  border: 1px solid white;
+}
+
+.blog-main img:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.blog-main div {
+  margin-bottom: 2rem;
+}
+
+.blog-main h2 {
+  margin-bottom: 1rem;
+}
+
+.blog-main ul {
+  margin: 2rem;
+}
+
+table {
+  border: 2px solid white;
+}
+
+table td {
+  padding: 1rem;
+}
+
+tbody td:nth-child(2) {
+  border-left: 1px solid white;
+}
+
+/* contact page */
+
+.contact-card {
+  background-color: rgb(107, 0, 41);
+  width: 40%;
+  margin: auto;
+  margin-bottom: 6rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  color: white;
+}
+
+.contact-card p {
+  padding-top: 2rem;
+}
+
+.contact-card h1 {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+form {
+  max-width: 40%;
+  margin: auto;
+  background-color: rgb(107, 0, 41);
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+form h2 {
+  color: white;
+}
+
+label {
+  color: rgba(159, 159, 159, 255);
+}
+
+input {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+#msg {
+  width: fit-content;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: rgb(0, 134, 158);
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

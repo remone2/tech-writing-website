@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Surfing the Internet Safely</title>
+</head>
+<body>
+  <div class="whole">
+    <header class="top-half">
+      <div class="top-left">
+        <p><span class="material-icons">keyboard_double_arrow_right</span></p>
+        <p class="logo">Default Blog</p>
+      </div>
+  
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about-me.html">About Me</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+      </ul>
+    </header>
+
+    <div class="blog-main">
+      <div>
+        <h1>Surfing the Internet Safely</h1>
+        <p>Jamodin Maliwanag - September 19, 2021</p>
+        <img src="./images/internet.png" alt="a closeup shot of a laptop">
+      </div>
+      <div>
+        <p>You may have noticed that most websites have a lock icon next to the address bar. This lock ensures that the information
+        you input into the website will be safe. The name for the lock was known as Secure Sockets Layer (SSL) and is now known
+        as Transport Layer Security (TLS), its successor.</p>
+      </div>
+      <div>
+        <img src="./images/blog-1-img-1.png" alt="a lock icon with https://docs.google.com to the right of it">
+        <p><em>lock icon and "https" shows secure browsing</em></p>
+      </div>
+      <div>
+        <h2>What is SSL and TLS?</h2>
+        <p>SSL was developed by Netscape in 1994. It was a protocol used to help secure the transfer of information between your
+        computer and the server that the website is held on. It works by encrypting your information and only the website
+        holding your information can decrypt it. After the protocol was upgraded 3 times, it got replaced by a better protocol.
+        In 1999, TLS was made and had better measures against exploitation and vulnerabilities on websites. The current version
+        of TLS is 1.3, defined in 2018.</p>
+      </div>
+      <div>
+        <h2>Encryption and HTTPS</h2>
+        <p>Encryption works by taking plain text or information and scrambling it so it's unreadable to a person or program trying
+        to decipher it. Without encryption, your information will be stored as is. This means anyone who can access the website
+        has your unscrambled information. Two types of encryption are: Symmetric and Asymmetric. Symmetric encryption has 1 key
+        to encrypt and decrypt. Asymmetric encryption has a public key which: encrypts and verifies if the information has an
+        authentic signature, and a private key which: decrypts and acts as an authentic signature.</p>
+      </div>
+      <div>
+        <img src="./images/blog-1-img-2.png" alt="a diagram of how encryption and decryption works">
+        <p><em>Public key encrypts while private key decrypts</em></p>
+      </div>
+      <div>
+        <p>HTTP stands for hypertext transfer protocol and HTTPS is hypertext transfer protocol secure. When a website has
+        “http://”, it will usually replace the lock icon with an X icon, signifying that your connection is not secure and your
+        information is unscrambled. However, if a website has “https://”, it will accompany the lock icon, signifying that your
+        information is secure and scrambled.</p>
+      </div>
+      <div>
+        <img src="./images/blog-1-img-3.png" alt="showing how http does not encrypt your information while https does encrypt your information">
+        <p><em>Shows how "https" scrambles your information</em></p>
+      </div>
+      <div>
+        <h2>How trustworthy is SSL/TLS?</h2>
+        <p>SSL is trustworthy, but not everything can be fully secure. Hackers will always be trying to decrypt your information.
+        However, developers are also constantly upgrading and finding ways to make their encryption better. Websites with the
+        lock icon are more secure than websites without a lock icon. To ensure a website is always secure, they have an SSL/TLS
+        certificate that can be signed by a trusted Certificate Authority (CA). The website then goes through regular audits to
+        determine if it can still be trusted. Information such as your address, credit card number or passwords are important
+        and should be encrypted with the help of SSL/TLS and its encryption system.</p>
+      </div>
+      <div>
+        <h2>References / Citations</h2>
+        <p>Julia Shirwod Nueva (September 21, 2019) Core i3 Laptop</p>
+        <a href="https://commons.wikimedia.org/wiki/File:Core_i3_Laptop.jpg">commons.wikimedia.org</a>
+        <p>SSL Support Team (2019, October 2) What is SSL? SSL</p>
+        <a href="https://www.ssl.com/faqs/faq-what-is-ssl/">ssl.com</a>
+        <p>Vince Thomas (n.d.) SSL/TLS Overview Google</p>
+        <a href="https://sites.google.com/site/tlsssloverview/ssl-v-tls/tls-versions-and-browser-compatability">sites.google.com</a>
+        <p>Elizabeth Baier (2015, February 2) The Evolution of SSL and TLS</p>
+        <a href="https://www.digicert.com/blog/evolution-of-ssl">digicert.com</a>
+        <p>Oracle Corporation and/or its affiliates (2010) Configuring Java CAPS for SSL Support Oracle</p>
+        <a href="https://docs.oracle.com/cd/E19509-01/820-3503/ggbgc/index.html">docs.oracle.com</a>
+        <p>Alison Grace Johansen (2020, July 24) What is encryption and how does it protect your data? Norton</p>
+        <a href="https://us.norton.com/internetsecurity-privacy-what-is-encryption.html">us.norton.com</a>
+        <p>Internet Society (n.d.) TLS Basics Internetsociety</p>
+        <a href="https://www.internetsociety.org/deploy360/tls/basics/">internetsociety.org</a>
+        <p>Cloud Flare (n.d.) HTTP vs. HTTPS: What are the differences? Cloudflare</p>
+        <a href="https://www.cloudflare.com/en-ca/learning/ssl/why-is-http-not-secure/">cloudflare.com</a>
+        <p>Jiathong (2019, November 19) HTTP vs HTTPS: The Difference And Everything You Need To Know Seopressor</p>
+        <a href="https://seopressor.com/blog/http-vs-https/">seopressor.com</a>
+        <p>David Göthberg (2006, August 7) Public key encryption Wikipedia</p>
+        <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">en.wikipedia.org</a>
+      </div>
+    </div>
+
+    <footer>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about-me.html">About Me</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
